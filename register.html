@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <script src="register.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link href="register.css" type="text/css" rel="stylesheet" />
+</head>
+
+<body>
+    <form name="formReg" onsubmit="return checkForm()" action="calculator.html">
+        <h2>Register</h2>
+        <table>
+            <tr>
+                <td><label for="name">Name:</label></td>
+                <td><input type="text" name="fname" id="fname"></td>
+            </tr>
+            <tr>
+                <td><label for="surName">Surname:</label></td>
+                <td><input type="text" name="lname" id="lname"></td>
+            </tr>
+            <tr>
+                <td><label for="dateOfBirth">Date Of Birth:</label></td>
+                <td><input type="text" name="dateOfBirth" id="dateOfBirth" placeholder="DD/MM/YYYY"></td>
+            </tr>
+            <tr>
+                <td><label for="email">E-mail:</label></td>
+                <td><input type="text" name="email" id="email"></td>
+            </tr>
+            <tr>
+                <td><label for="password">Password:</label></td>
+                <td><input type="password" name="password" id="password" onclick="return information();"></td>
+            </tr>
+            <tr>
+                <td><label for="gender">Gender:</label></td>
+                <td>
+                    <select name="gender">
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="interests">Mark your interests:</label></td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="checkbox" name="music">
+                    <label for="music">Music</label><br>
+
+                    <input type="checkbox" name="books">
+                    <label for="books">Books</label><br>
+
+                    <input type="checkbox" name="movies">
+                    <label for="movies">Movies</label><br>
+
+                    <input type="checkbox" name="technology">
+                    <label for="technology">Technology</label>
+                </td>
+                <td>
+                    <input type="checkbox" name="games">
+                    <label for="games">Games</label><br>
+
+                    <input type="checkbox" name="news">
+                    <label for="news">News</label><br>
+
+                    <input type="checkbox" name="politics">
+                    <label for="politics">Politics</label><br><br>
+                </td>
+            </tr>
+            <tr>
+                <td colspan='2'><br>
+                    <button type="reset">Reset</button>
+                    <button type="submit">Submit</button>
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+
+</html>

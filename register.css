@@ -1,0 +1,26 @@
+body {
+    margin: 30px 0 0 30px;
+    font-family: monospace;
+    line-height: 30px;
+    font-size: 15px;
+}
+
+select {
+    font-family: inherit;
+}
+
+input {
+    font-family: inherit;
+}
+
+button {
+    font-family: inherit;
+    background-color: white;
+    box-shadow: 0 0.5em 0.5em -0.4em var;
+    transform: translateY(-0.25em);
+}
+
+button:active {
+    box-shadow: 0 0 0 0 var;
+    transform: translateY(0);
+}
