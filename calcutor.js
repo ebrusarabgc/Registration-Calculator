@@ -17,7 +17,7 @@ function clr() {
 }
 
 function del() {
-    var exp = document.formCal.textview.value;
+    var exp = document.getElementById("textview").value;
     document.getElementById("textview").value = exp.substring(0, exp.length - 1);
 }
 
